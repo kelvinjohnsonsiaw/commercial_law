@@ -25,6 +25,7 @@ export default function App() {
 
   return (
     <div className="wrap">
+      <div className="sitelink"><a href="https://international-law-cyan.vercel.app/">🌍 International Law →</a></div>
       <header>
         <h1>Commercial Law, made easy ⚖️</h1>
         <p>Plain-English study notes, case stories, flashcards and quizzes, based on the 4th edition (2009). Some law may have changed since, so follow your course notes. Take it one chapter at a time.</p>

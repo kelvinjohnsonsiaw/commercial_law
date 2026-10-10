@@ -1,9 +1,9 @@
-:root{--bg:#F6F1FB;--card:#fff;--ink:#2B1B3D;--mute:#6b5d7c;--line:#e3d9ef;--c:#14A38B;--soft:#e0f5f1;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1427;--card:#2a2038;--ink:#f3ecfb;--mute:#b9aacb;--line:#40334f;--soft:#2f3a3a}}
-:root[data-theme="dark"]{--bg:#1c1427;--card:#2a2038;--ink:#f3ecfb;--mute:#b9aacb;--line:#40334f;--soft:#2f3a3a}
+:root{--bg:#E9F3F1;--bg-grad:linear-gradient(160deg,#E2F0EE 0%,#F1F3EA 100%);--card:#fff;--ink:#1B2B38;--mute:#516572;--line:#C9DCD9;--c:#14A38B;--soft:#DDEFEC;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1E21;--bg-grad:linear-gradient(160deg,#0C1B1E 0%,#16262A 100%);--card:#182A2E;--ink:#E7F2F1;--mute:#9DB5B8;--line:#2B4549;--soft:#1F3B3C}}
+:root[data-theme="dark"]{--bg:#0F1E21;--bg-grad:linear-gradient(160deg,#0C1B1E 0%,#16262A 100%);--card:#182A2E;--ink:#E7F2F1;--mute:#9DB5B8;--line:#2B4549;--soft:#1F3B3C}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Nunito Sans",system-ui,sans-serif}
+body{margin:0;background:var(--bg-grad,var(--bg));background-attachment:fixed;min-height:100vh;color:var(--ink);font:17px/1.65 "Nunito Sans",system-ui,sans-serif}
 h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
 .wrap{max-width:760px;margin:0 auto;padding:20px 16px 60px}
 header h1{font-size:2rem;font-weight:800}header p{color:var(--mute);margin:.4rem 0 1rem}
@@ -38,3 +38,8 @@ ul{padding-left:1.1rem;margin:.4rem 0}li{margin:.45rem 0}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 .reading{border-color:#E85D9C;box-shadow:0 0 0 3px rgba(232,93,156,.25)}
 select{font:inherit;padding:4px 8px;border-radius:8px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
+
+/* link to the sister site */
+.sitelink{display:flex;justify-content:flex-end;margin:0 0 10px}
+.sitelink a{display:inline-block;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:7px 16px;font:700 .92rem "Nunito Sans",system-ui,sans-serif;text-decoration:none}
+.sitelink a:hover,.sitelink a:focus-visible{border-color:var(--c);outline:none;box-shadow:0 0 0 3px rgba(20,163,139,.25)}
